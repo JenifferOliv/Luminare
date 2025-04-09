@@ -1,0 +1,279 @@
+:root {
+    --marrom: #3b2a23;
+    --rosa: #f3dccc;
+    --branco: #fffaf8;
+    --sombra: rgba(0, 0, 0, 0.05);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--branco);
+    color: var(--marrom);
+    line-height: 1.6;
+  }
+  
+  /* CABEÇALHO */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--marrom);
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #a77d5a;
+  }
+  
+  /* BARRA DE PESQUISA BONITA */
+  .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .search input {
+    padding: 10px 40px 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    width: 220px;
+    transition: 0.3s ease;
+  }
+  
+  .search input:focus {
+    outline: none;
+    border-color: var(--rosa);
+    box-shadow: 0 0 5px var(--rosa);
+  }
+  
+  .search img {
+    height: 18px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* HERO */
+  .hero {
+    background-color: var(--marrom);
+    color: white;
+    padding: 60px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    margin: 15px 0;
+  }
+  
+  .hero-text p {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: var(--rosa);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e4c4b5;
+  }
+  
+  .hero-img img {
+    max-width: 350px;
+    border-radius: 20px;
+  }
+  
+  .senai-logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  /* CARROSSEL DE VÍDEOS */
+  .carrossel-videos {
+    padding: 60px 20px;
+    background-color: var(--rosa);
+    text-align: center;
+  }
+  
+  .carrossel-videos h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: var(--marrom);
+  }
+  
+  .video-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 10px 20px;
+  }
+  
+  .video-card {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px var(--sombra);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+  }
+  
+  .video-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4a342b;
+    font-size: 14px;
+  }
+  
+  /* 3 QUADRADOS DE CONTEÚDO */
+  .cards-section {
+    padding: 60px 20px;
+    background-color: #fef8f6;
+    text-align: center;
+  }
+  
+  .cards-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: var(--marrom);
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px var(--sombra);
+    transition: transform 0.3s;
+    text-align: left;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--marrom);
+  }
+  
+  .card p {
+    font-size: 15px;
+    color: #5c3e33;
+  }
+  
+  /* RODAPÉ BONITO */
+  footer {
+    background: linear-gradient(90deg, #3b2a23, #6d4c41);
+    color: #f3dccc;
+    text-align: center;
+    padding: 40px 20px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+  }
+  
+  footer p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  footer a {
+    color: #fbe5da;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-img img {
+      margin-top: 20px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .search input {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .video-card iframe {
+      height: 200px;
+    }
+  
+    .card {
+      text-align: center;
+    }
+  }
+  
